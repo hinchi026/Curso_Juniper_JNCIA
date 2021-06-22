@@ -16,6 +16,35 @@ There should be whitespace between paragraphs. There should be whitespace betwee
 >
 > There should be no margin below this final sentence.
 
+```scss
+services {
+        ssh {
+            protocol-version v2;
+            max-sessions-per-connection 64;
+        }
+        netconf {
+            ssh;
+        }
+        web-management {
+            http;
+        }
+        dhcp {
+            traceoptions {
+                file dhcp_logfile;
+                level all;
+                flag all;
+            }
+            pool 10.211.100.0/24 {
+                address-range low 10.211.100.10 high 10.211.100.100;
+                router {
+                    10.211.100.1;
+                }
+            }
+        }
+    }
+```
+
+
 # Header 1
 
 This is a normal paragraph following a header. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.
@@ -188,6 +217,6 @@ Para este capitulo es importante tener en cuenta que se debe siempre saber la ve
 ```
 
 ```tip
-Siempre se debe verifica el comando antes de aplicar cambios`
+Siempre se debe verifica el comando antes de aplicar cambios
 
 ```

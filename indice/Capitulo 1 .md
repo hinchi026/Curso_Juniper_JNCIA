@@ -176,3 +176,18 @@ Large images should always scale down and fit in the content container.
 ```
 This is the final element on the page and there should be no margin below this.
 ```
+
+```note
+## Nota:
+
+Para este capitulo es importante tener en cuenta que se debe siempre saber la version del sistema operativo que se maneja en los SW.
+
+`show version`
+
+[`inline code inside link`](./)
+```
+
+```tip
+Siempre se debe verifica el comando antes de aplicar cambios`
+
+```
